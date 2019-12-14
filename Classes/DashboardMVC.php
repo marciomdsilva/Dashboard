@@ -15,7 +15,7 @@ class DashboardMVC
 //        print_r($url);
 //        echo '<br>';
 
-        //Se o valor do url não tiver nada é redirecionado automaticamente para o index
+        //Se o valor do url não tiver nada é redirecionado automaticamente para o home
         if (empty($url[0])) {
             require 'Controllers/index.php';
             $controller = new Index();
@@ -26,7 +26,7 @@ class DashboardMVC
         $file = 'Controllers/' . $url[0] . '.php';
         //Verifica se o ficheiro existe
         if (file_exists($file)) {
-            //Acede ao index que está dentro do controlador e cria um novo objeto ex: index
+            //Acede ao home que está dentro do controlador e cria um novo objeto ex: home
             require $file;
         } else {
             require 'Controllers/errorFile.php';
@@ -35,7 +35,7 @@ class DashboardMVC
         }
 
 
-        //Acede ao index que está dentro do controlador e cria um novo objeto ex: index
+        //Acede ao home que está dentro do controlador e cria um novo objeto ex: home
         $controller = new $url[0];
 
         //Verifica primeiro se a variavel foi declarada e se é diferente de null

@@ -8,6 +8,6 @@ class ErrorFile extends MainController {
         echo 'This is an error!<br>';
 
         $this->view->msg = 'Esta pagina não existe';
-        $this->view->render('error/index');
+        $this->view->render('error/home');
     }
 }
