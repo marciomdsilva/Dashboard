@@ -1,6 +1,6 @@
 <?php
 
-class ErrorFile extends Controller {
+class ErrorFile extends MainController {
 
     function __construct()
     {

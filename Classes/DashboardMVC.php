@@ -1,6 +1,6 @@
 <?php
 
-class Bootstrap
+class DashboardMVC
 {
 
     function __construct()
@@ -15,20 +15,21 @@ class Bootstrap
 //        print_r($url);
 //        echo '<br>';
 
+        //Se o valor do url não tiver nada é redirecionado automaticamente para o index
         if (empty($url[0])) {
-            require 'controllers/index.php';
+            require 'Controllers/index.php';
             $controller = new Index();
             //Retorna falso para nao executar o codigo que está por baixo
             return false;
         }
 
-        $file = 'controllers/' . $url[0] . '.php';
+        $file = 'Controllers/' . $url[0] . '.php';
         //Verifica se o ficheiro existe
         if (file_exists($file)) {
             //Acede ao index que está dentro do controlador e cria um novo objeto ex: index
             require $file;
         } else {
-            require 'controllers/errorFile.php';
+            require 'Controllers/errorFile.php';
             $controller = new ErrorFile();
             return false;
         }

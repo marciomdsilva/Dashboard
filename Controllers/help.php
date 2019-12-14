@@ -1,6 +1,6 @@
 <?php
 
-class Help extends Controller {
+class Help extends MainController {
 
     function __construct()
     {

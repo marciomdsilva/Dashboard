@@ -1,0 +1,12 @@
+RewriteEngine On
+
+#Faz com que o link não redirecione para uma directoria
+RewriteCond %{REQUEST_FILENAME} !-d
+#Faz com que o link não redirecione para um ficheiro
+RewriteCond %{REQUEST_FILENAME} !-f
+#Faz com que o link não redirecione para um link
+RewriteCond %{REQUEST_FILENAME} !-l
+
+#Serve para que quando escrever o url ele adicione uma variavel com o
+#nome da pagina ex: "site.com?url=pagina"
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
