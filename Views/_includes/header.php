@@ -5,7 +5,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="../../Includes/fonts/glyphicon.css" rel="stylesheet">
+    <link href="Includes/css/glyphicon.css" rel="stylesheet">
     <link href="Includes/css/default.css" rel="stylesheet">
 
 </head>

@@ -9,6 +9,6 @@ class MainView {
 
     public function render($name)
     {
-        require 'views/' . $name . '.php';
+        require 'Views/' . $name . '.php';
     }
 }
