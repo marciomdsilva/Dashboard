@@ -76,15 +76,11 @@
 
 </head>
 <body>
-
 <!--    video-->
-<!--<video id="videoBG" poster="poster.JPG" autoplay muted loop>-->
-<!--    <source src="video/waves.mp4">-->
-<!--</video>-->
-
-<!--<iframe  id="videoBG" src="https://www.youtube-nocookie.com/embed/Yypnp_-DAuM?playlist&loop=1&autoplay=1&controls=0"></iframe>-->
+<video id="videoBG" poster="poster.JPG" autoplay muted loop>
+    <source src="<?php echo HOME_URL; ?>Includes/video/waves.mp4">
+</video>
 
 <div class="container-fluid bg-login">
-
     <!--    Aqui Fica toda a estrutura do site -->
     <!--    As tags que fecham o body e o div de content são fechadas dentro do footer.php-->
