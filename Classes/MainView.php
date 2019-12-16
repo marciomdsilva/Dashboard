@@ -18,6 +18,6 @@ class MainView {
     {
         require 'Views/_includes/login-header.php';
         require 'Views/' . $name . '.php';
-        require 'Views/_includes/footer.php';
+        require 'Views/_includes/login-footer.php';
     }
 }
