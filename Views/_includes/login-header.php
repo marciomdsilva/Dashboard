@@ -15,7 +15,7 @@
     <!--CSS que só se aplica a esta pagina-->
     <style type="text/css">
         .bg-login {
-            /*background: url("*/<?php //echo HOME_URL; ?>/*Includes/img/loginbackground.jpg") no-repeat;*/
+            /*background: url("img/loginbackground.jpg") no-repeat;*/
             width: 100%;
             height: 100vh;
         }
