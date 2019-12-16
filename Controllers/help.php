@@ -5,7 +5,11 @@ class Help extends MainController {
     function __construct()
     {
         parent:: __construct();
-        echo 'Estámos dentro do help do controllador <br />';
+//        echo 'Estámos dentro do help do controllador <br />';
+    }
+
+    function index() {
+        $this->view->render('help/index');
     }
 
     public function other($arg = false) {

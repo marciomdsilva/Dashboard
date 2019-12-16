@@ -1,8 +1,9 @@
+<!-- Este div fecha o div de content iniciado no header-->
 </div>
 
-<div id="footer">
-    (c) Footer teste
-</div>
+<footer id="footer">
+    <p>Copyright DashBoard by Márcio Silva, &copy;2019</p>
+</footer>
 
 <!--No final da pagina para a pagina fazer um load rapido-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

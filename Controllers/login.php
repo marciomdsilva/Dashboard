@@ -1,6 +1,6 @@
 <?php
 
-class Index extends MainController {
+class Login extends MainController {
 
     function __construct()
     {
@@ -9,6 +9,6 @@ class Index extends MainController {
     }
 
     function index() {
-        $this->view->render('home/index');
+        $this->view->renderLogin('login/index');
     }
 }

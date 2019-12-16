@@ -19,6 +19,7 @@ class DashboardMVC
         if (empty($url[0])) {
             require 'Controllers/index.php';
             $controller = new Index();
+            $controller->index();
             //Retorna falso para nao executar o codigo que está por baixo
             return false;
         }
@@ -29,22 +30,38 @@ class DashboardMVC
             //Acede ao home que está dentro do controlador e cria um novo objeto ex: home
             require $file;
         } else {
-            require 'Controllers/errorFile.php';
-            $controller = new ErrorFile();
-            return false;
+            $this->error();
         }
 
 
         //Acede ao home que está dentro do controlador e cria um novo objeto ex: home
         $controller = new $url[0];
+        $controller->loadModel($url[0]);
 
         //Verifica primeiro se a variavel foi declarada e se é diferente de null
         if (isset($url[2])) {
-            $controller->{$url[1]}($url[2]);
+            if (method_exists($controller, $url[1])) {
+                $controller->{$url[1]}($url[2]);
+            } else {
+                $this->error();
+            }
         } else {
             if (isset($url[1])) {
-                $controller->{$url[1]}();
+                if (method_exists($controller, $url[1])) {
+                    $controller->{$url[1]}();
+                } else {
+                    $this->error();
+                }
+            } else {
+                $controller->index();
             }
         }
+    }
+
+    function error() {
+        require 'Controllers/errorFile.php';
+        $controller = new ErrorFile();
+        $controller->index();
+        return false;
     }
 }
