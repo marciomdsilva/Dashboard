@@ -1,6 +1,3 @@
-<!-- Este div fecha o div de content iniciado no header-->
-</div>
-
 <!--<footer id="footer">-->
 <!--    <p>Copyright DashBoard by Márcio Silva, &copy;2019</p>-->
 <!--</footer>-->

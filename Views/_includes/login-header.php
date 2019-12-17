@@ -10,12 +10,36 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="<?php echo HOME_URL; ?>Includes/css/glyphicon.css" rel="stylesheet">
-    <link href="<?php echo HOME_URL; ?>Includes/css/style.css" rel="stylesheet">
+<!--    <link href="--><?php //echo HOME_URL; ?><!--Includes/css/style.css" rel="stylesheet">-->
 
     <!--CSS que só se aplica a esta pagina-->
     <style type="text/css">
+
+        .video-background {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            padding-top: 56.25%;
+            width: 100%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: 2s opacity ease;
+            transition: 2s opacity ease;
+            opacity: 1; }
+
+        .video-foreground,
+        .video-background iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
         .bg-login {
-            /*background: url("img/loginbackground.jpg") no-repeat;*/
+            /*background: url("<?php echo HOME_URL; ?>Includes/img/loginbackground.jpg") no-repeat;*/
             width: 100%;
             height: 100vh;
         }
@@ -75,12 +99,3 @@
     </style>
 
 </head>
-<body>
-<!--    video-->
-<video id="videoBG" poster="poster.JPG" autoplay muted loop>
-    <source src="<?php echo HOME_URL; ?>Includes/video/waves.mp4">
-</video>
-
-<div class="container-fluid bg-login">
-    <!--    Aqui Fica toda a estrutura do site -->
-    <!--    As tags que fecham o body e o div de content são fechadas dentro do footer.php-->
