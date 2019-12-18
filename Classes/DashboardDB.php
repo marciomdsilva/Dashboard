@@ -4,7 +4,7 @@ class DashboardDB extends PDO {
 
     public function __construct()
     {
-        parent:: __construct('mysql:host=localhost;dbname=dashboard_mvc','root','serverteste123');
+        parent:: __construct(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME,DB_USER,DB_PASS);
 
     }
 }
