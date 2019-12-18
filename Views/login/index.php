@@ -20,7 +20,7 @@
         <div class="col"></div>
         <div class="col">
             <!--form start-->
-            <form class="form-container">
+            <form class="form-container" action="login/run" method="post">
                 <h1>DashBoard</h1>
                 <!--Email-->
                 <div class="form-group">
@@ -31,7 +31,7 @@
                                                                 aria-hidden="true"></span></div>
                         </div>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                               placeholder="Enter email">
+                               placeholder="Enter email" name="login">
                     </div>
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
@@ -44,7 +44,7 @@
                             <div class="input-group-text"><span class="glyphicon glyphicon-lock"
                                                                 aria-hidden="true"></span></div>
                         </div>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
                     </div>
                 </div>
                 <!--Botão-->

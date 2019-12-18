@@ -6,6 +6,13 @@ class Index extends MainController {
     {
         parent:: __construct();
 //        echo 'Estamos dentro do home do controlador <br>';
+        MainSession::init();
+        $logged = MainSession::get('loggedIn');
+        if ($logged == false) {
+            MainSession::destroy();
+            header('location: login');
+            exit;
+        }
     }
 
     function index() {

@@ -15,10 +15,10 @@ class DashboardMVC
 //        print_r($url);
 //        echo '<br>';
 
-        //Se o valor do url não tiver nada é redirecionado automaticamente para o home
+        //Se o valor do url não tiver nada é redirecionado automaticamente para o login se não tiver conectado
         if (empty($url[0])) {
-            require 'Controllers/index.php';
-            $controller = new Index();
+            require 'Controllers/login.php';
+            $controller = new Login();
             $controller->index();
             //Retorna falso para nao executar o codigo que está por baixo
             return false;

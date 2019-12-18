@@ -11,4 +11,8 @@ class Login extends MainController {
     function index() {
         $this->view->renderLogin('login/index');
     }
+
+    function run() {
+        $this->model->run();
+    }
 }
