@@ -68,7 +68,8 @@
                     <a class="nav-link" href="#">Welcome, Márcio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="login.html">Logout <span class="sr-only">(current)</span></a>
+                    <?php if (MainSession::get('loggedIn') == true) ?>
+                    <a class="nav-link" href="<?php echo HOME_URL; ?>index/logout">Logout <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>

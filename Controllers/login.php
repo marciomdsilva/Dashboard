@@ -6,6 +6,12 @@ class Login extends MainController {
     {
         parent:: __construct();
 //        echo 'Estamos dentro do home do controlador <br>';
+        //Serve para nao acessar a pagina de login se tiver sessão iniciada
+        MainSession::init();
+        $logged = MainSession::get('loggedIn');
+        if ($logged == true) {
+            header('location: index');
+        }
     }
 
     function index() {

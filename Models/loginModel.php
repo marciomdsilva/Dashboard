@@ -27,8 +27,9 @@ class loginModel extends MainModel
 
 
         $count =  $sth->rowCount();
-        if ($count >0) {
+        if ($count > 0) {
             //login
+            MainSession::init();
             MainSession::set('loggedIn', true);
             header('location: ../index');
         } else {
