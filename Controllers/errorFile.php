@@ -9,7 +9,7 @@ class ErrorFile extends MainController {
     }
 
     function index() {
-        $this->view->msg = 'Esta pagina não existe';
+        $this->view->msg = 'Pedimos desculpa, mas esta pagina não existe!';
         $this->view->render('error/index');
     }
 }
