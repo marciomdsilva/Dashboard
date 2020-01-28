@@ -33,7 +33,7 @@ class loginModel extends MainModel
             MainSession::set('loggedIn', true);
             header('location: ../index');
         } else {
-            header('location: login');
+            header('location: ../login');
         }
 
         //Imprime o array encontrado
