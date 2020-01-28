@@ -1,7 +1,7 @@
 <?php
 
 //URL da home     ----- Sempre que mudar de servidor ou ip do servidor isto tem que ser alterado -----
-define( 'HOME_URL', 'http://192.168.20.195/dashboard_mvc/' );
+define( 'HOME_URL', 'http://192.168.120.166/dashboard_mvc/' );
 
 // Tipo de Base de Dados
 define( 'DB_TYPE', 'mysql' );

@@ -112,6 +112,7 @@
         </div>
 <!--        <h2>we are sorry, but the page you requested was not found</h2>-->
         <h2><?php echo $this->msg; ?></h2>
+        <a href="<?php echo HOME_URL; ?>index" class="btn btn-dark btn-lg " role="button" aria-pressed="true">Afogar mágoas..</a>
     </div>
 </div>
 
