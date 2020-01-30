@@ -41,9 +41,9 @@
                     <a href="dashboard.html" class="list-group-item list-group-item-action active bg-dark ">
                         <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard
                     </a>
-                    <a href="pages.html" class="list-group-item list-group-item-action"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Pages <span class="badge badge-pill badge-secondary float-right">198</span></a>
-                    <a href="posts.html" class="list-group-item list-group-item-action"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Posts <span class="badge badge-pill badge-secondary float-right">12</span></a>
-                    <a href="users.html" class="list-group-item list-group-item-action"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge badge-pill badge-secondary float-right">7</span></a>
+                    <a href="pages.html" class="list-group-item list-group-item-action"><span class="fas fa-umbrella-beach fa-flip-horizontal" aria-hidden="true"></span> Concessões <span class="badge badge-pill badge-secondary float-right">198</span></a>
+                    <a href="posts.html" class="list-group-item list-group-item-action"><span class="fas fa-portrait" aria-hidden="true"></span> Clients <span class="badge badge-pill badge-secondary float-right">12</span></a>
+                    <a href="users.html" class="list-group-item list-group-item-action"><span class="fas fa-user" aria-hidden="true"></span> Users <span class="badge badge-pill badge-secondary float-right">7</span></a>
                     <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Fora de Serviço</a>
                 </div>
                 <!--------------------------------------------------------------------------------------------------------------------->
@@ -63,26 +63,26 @@
             <div class="col-md-9">
                 <div class="card mb-3">
                     <div class="card-header bg-dark main-color-bg">
-                        <div class="card-title">Settings</div>
+                        <div class="card-title">Information</div>
                     </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="card card-body bg-light dash-box">
-                                    <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 12</h2>
-                                    <h4>Users</h4>
+                                    <h2><span class="fas fa-umbrella-beach fa-flip-horizontal" aria-hidden="true"></span> 3</h2>
+                                    <h4>Concessões</h4>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="card card-body bg-light dash-box">
-                                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 33</h2>
-                                    <h4>Pages</h4>
+                                    <h2><span class="fas fa-chair" aria-hidden="true"></span> 74</h2>
+                                    <h4>Camas Livres</h4>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="card card-body bg-light dash-box">
-                                    <h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 203</h2>
-                                    <h4>Posts</h4>
+                                    <h2><span class="fas fa-portrait" aria-hidden="true"></span> 407</h2>
+                                    <h4>Clientes</h4>
                                 </div>
                             </div>
                             <div class="col-md-3">

@@ -8,7 +8,7 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="<?php echo HOME_URL; ?>Includes/css/glyphicon.css" rel="stylesheet">
     <link href="<?php echo HOME_URL; ?>Includes/css/style.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/1d1280b1aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -59,8 +59,8 @@
             <!--------------------------------------------------------------------------------------------------------------------->
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search for Client" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search </button>
             </form>
             <!--------------------------------------------------------------------------------------------------------------------->
             <ul class="navbar-nav navbar-right">
